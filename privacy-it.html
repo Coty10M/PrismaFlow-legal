@@ -42,7 +42,7 @@
           Come vengono memorizzati i dati di gioco e trattate le informazioni
           dai servizi facoltativi.
         </p>
-        <span class="meta">Ultimo aggiornamento: 7 novembre 2026</span>
+        <span class="meta">Ultimo aggiornamento: 10 novembre 2026</span>
       </section>
       <article class="article">
         <div class="article-intro">
@@ -76,9 +76,12 @@
               >Non gestiamo account PrismaFlow né un server proprietario che
               riceve il profilo locale di gioco.</strong
             >
-            Eventuali backup dipendono dalle impostazioni del dispositivo e dai
-            servizi Apple.
+            I backup del dispositivo dipendono dalle impostazioni Apple.
           </p>
+        </section>
+        <section id="icloud" class="content-section">
+          <h2>Backup iCloud</h2>
+          <p>Se iCloud Drive è disponibile, PrismaFlow crea automaticamente copie di sicurezza private nel tuo account iCloud Apple. Possono includere progressi, record, nickname, avatar, risultati delle sfide, saldo booster, impostazioni, identificativi delle consegne degli acquisti e un identificativo di backup del dispositivo. Sono esclusi il consenso pubblicitario, gli identificativi pubblicitari e quelli dell’account Game Center. Le partite non si sincronizzano automaticamente tra dispositivi: il ripristino richiede conferma. Puoi gestire o cancellare i dati iCloud nelle impostazioni Apple. La disponibilità dei backup dipende da iCloud e dalle impostazioni del dispositivo.</p>
         </section>
         <section id="s3" class="content-section">
           <h2>Apple Game Center</h2>
@@ -88,7 +91,7 @@
             risultati delle sfide giornaliere/settimanali alle classifiche Apple
             configurate e mostra nomi pubblici, posizioni e, ove forniti da
             Apple, immagini dei giocatori. Il nickname e l’avatar scelti
-            nell’app restano salvati localmente; le classifiche utilizzano
+            nell’app sono salvati localmente e possono essere inclusi nei backup iCloud; le classifiche utilizzano
             l’identità gestita da Game Center. L’uso di Game Center è
             facoltativo.
           </p>
@@ -121,61 +124,17 @@
           </p>
         </section>
         <section id="s5" class="content-section">
-          <h2>Pubblicità e tracciamento</h2>
-          <p>
-            L’app include un’integrazione con
-            <strong>Unity LevelPlay</strong> per annunci interstitial e video
-            premio facoltativi.
-            <strong
-              >Alla data di questa informativa, la pubblicità di produzione è
-              disabilitata nella configurazione Release e la schermata della
-              preferenza pubblicitaria è ancora un’implementazione provvisoria
-              di sviluppo/test.</strong
-            >
-            Prima di attivare gli annunci occorre completare configurazione e
-            gestione del consenso.
-          </p>
-          <p>
-            Se la pubblicità verrà attivata in una versione successiva, Unity
-            LevelPlay e le reti configurate nella mediazione potrebbero trattare
-            dati tecnici del dispositivo, posizione approssimativa ricavata
-            dall’IP, identificativi pubblicitari quando consentiti e dati di
-            erogazione, prevenzione frodi e misurazione degli annunci, secondo
-            le rispettive configurazioni e autorizzazioni. Prima
-            dell’attivazione sarà necessario verificare l’elenco effettivo dei
-            partner, aggiornare le dichiarazioni e questa informativa. Il
-            permesso Apple App Tracking Transparency è distinto dagli altri
-            consensi eventualmente richiesti per le tecnologie pubblicitarie.
-          </p>
-          <p>
-            Approfondimenti:
-            <a
-              href="https://unity.com/legal/privacy-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Informativa Unity</a
-            >
-            e
-            <a
-              href="https://www.apple.com/it/legal/privacy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Informativa Apple</a
-            >.
-          </p>
+          <h2>Pubblicità, consenso e tracciamento</h2>
+          <p>PrismaFlow usa <strong>Google User Messaging Platform (UMP)</strong> per mostrare le scelte privacy e conservare o comunicare i segnali di consenso e opposizione. Usa <strong>Google AdMob</strong> (Google Mobile Ads SDK), <strong>Unity LevelPlay</strong>, <strong>Unity Ads</strong> e <strong>ironSource Ads</strong> per annunci interstitial e con premio facoltativi. Il messaggio di consenso identifica i partner pubblicitari; altri acquirenti autorizzati e fornitori possono partecipare all’erogazione.</p>
+          <p>I fornitori pubblicitari possono trattare indirizzi IP e posizione approssimativa ricavata dall’IP, informazioni sul dispositivo e sull’app (sistema operativo, modello, versione e identificativi, tra cui IDFA quando consentito), segnali di consenso, richieste, impressioni, interazioni, dati diagnostici, antifrode e di attribuzione/misurazione. Le finalità comprendono erogazione, sicurezza, prevenzione frodi, misurazione e, quando consentita, personalizzazione. Le loro informative descrivono le relative pratiche e conservazione.</p>
+          <p>Quando si applicano le norme europee sul consenso, l’app seleziona il percorso pubblicitario in base alle scelte UMP. In caso di rifiuto può richiedere gli annunci con limitazioni di Google (Limited Ads) anziché inizializzare LevelPlay senza il necessario consenso all’accesso al dispositivo. Le Limited Ads non usano dati personali per personalizzare gli annunci, ma possono trattare IP e dati tecnici di erogazione. Con gli annunci limitati programmatici attivi, Google può usare memoria locale o cookie esclusivamente per rilevare traffico non valido e frodi, anche senza consenso pubblicitario. Gli annunci possono non essere disponibili. Consulta le <a href="https://support.google.com/admob/answer/10105530?hl=it">informazioni Google sulle Limited Ads</a>.</p>
+          <p>Il permesso Apple App Tracking Transparency (ATT) è distinto dal consenso pubblicitario. Il rifiuto ATT impedisce il tracciamento tra app o siti di altre aziende soggetto al permesso Apple, ma non necessariamente la visualizzazione di annunci. Puoi modificare le scelte in Impostazioni → Privacy pubblicitaria quando richiesto per la tua area. Negli stati USA interessati, il messaggio permette di opporsi alla vendita, condivisione o pubblicità mirata secondo le norme applicabili. Rimuovi pubblicità elimina gli interstitial obbligatori, non i video premio facoltativi.</p>
+          <p>Approfondimenti: <a href="https://policies.google.com/privacy?hl=it">Informativa Google</a>, <a href="https://policies.google.com/technologies/partner-sites?hl=it">Uso dei dati da parte di Google nelle app partner</a>, <a href="https://unity.com/legal/privacy-policy">Informativa Unity</a> (servizi Unity e ironSource) e <a href="https://www.apple.com/it/legal/privacy/">Informativa Apple</a>.</p>
         </section>
         <section id="s6" class="content-section">
           <h2>Finalità e basi giuridiche</h2>
-          <p>
-            I dati locali di gioco sono utilizzati per offrire le funzionalità
-            richieste e ricordare le preferenze (esecuzione del servizio e, ove
-            applicabile, legittimo interesse al corretto funzionamento). Gli
-            acquisti sono gestiti per eseguire le transazioni e adempiere agli
-            obblighi di legge. Game Center funziona quando scegli di
-            utilizzarlo. Prima dell’attivazione della pubblicità saranno
-            individuati e applicati il consenso o l’altra base giuridica
-            pertinente alle specifiche tecnologie e finalità.
-          </p>
+          <p>Trattiamo dati di gioco e backup per fornire le funzioni richieste, dati di acquisto per eseguire transazioni e obblighi di legge, e messaggi di assistenza per rispondere alle richieste. Le basi sono l’esecuzione del servizio, gli obblighi legali o il legittimo interesse a gestire, proteggere e supportare il gioco, secondo i casi. La pubblicità usa il consenso ove richiesto, inclusa la personalizzazione e la memorizzazione o accesso non essenziali al dispositivo. Altri trattamenti, come l’erogazione tecnica o la prevenzione frodi, possono basarsi sul legittimo interesse ove consentito, senza superare eventuali requisiti separati di consenso per l’accesso al dispositivo. Puoi revocare il consenso od opporti nei casi previsti.</p>
+          <p>Apple e i fornitori pubblicitari ricevono i dati necessari ai propri servizi e possono trattarli secondo le rispettive informative. I dati possono essere trattati fuori dal tuo Paese, anche negli USA; le garanzie e i meccanismi di trasferimento applicabili dipendono dal fornitore e dal trattamento. Non vendiamo i salvataggi locali del gioco e non gestiamo un database proprietario di account giocatori.</p>
         </section>
         <section id="s7" class="content-section">
           <h2>Conservazione e sicurezza</h2>
@@ -192,49 +151,18 @@
         </section>
         <section id="s8" class="content-section">
           <h2>Scelte e diritti</h2>
-          <p>
-            Puoi scegliere di non usare Game Center, gestire il permesso Apple
-            al tracciamento dalle Impostazioni iOS e contattarci a
-            <a href="mailto:coticapp@gmail.com">coticapp@gmail.com</a>. Nella
-            build di test attuale puoi modificare la preferenza pubblicitaria
-            dalle impostazioni dell’app, ma ciò non sostituisce una soluzione di
-            consenso definitiva per la produzione. Per rimuovere i dati locali
-            puoi eliminare l’app e i suoi dati, tenendo presenti le impostazioni
-            di backup.
-          </p>
-          <p>
-            Nei casi previsti dalla legge puoi chiedere accesso, rettifica,
-            cancellazione, limitazione, portabilità od opporti a determinati
-            trattamenti; puoi revocare il consenso quando costituisce la base
-            del trattamento. Hai diritto di presentare reclamo all’autorità di
-            controllo (in Italia,
-            <a
-              href="https://www.garanteprivacy.it/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Garante per la protezione dei dati personali</a
-            >). Per i dati gestiti direttamente da Apple o altri fornitori
-            potrebbe essere necessario rivolgerti anche a loro.
-          </p>
+          <p>Gestisci consenso e opposizioni in Impostazioni → Privacy pubblicitaria quando il modulo è disponibile per la tua area; la revoca non pregiudica i trattamenti leciti precedenti. Gestisci ATT, Game Center e dati locali e iCloud tramite le impostazioni del dispositivo e dell’account Apple. Disinstallare l’app rimuove i dati locali, ma non necessariamente i backup iCloud o i dati dei fornitori. Per accesso, rettifica, cancellazione, limitazione, portabilità, opposizione o diritti applicabili negli USA scrivi a <a href="mailto:coticapp@gmail.com">coticapp@gmail.com</a>. Potremmo dover verificare la richiesta.</p>
+          <p>Puoi presentare reclamo all’autorità di controllo, incluso il <a href="https://www.garanteprivacy.it/">Garante per la protezione dei dati personali</a>. Per dati gestiti autonomamente da Apple o altri fornitori può essere necessario rivolgersi anche a loro.</p>
         </section>
         <section id="s9" class="content-section">
           <h2>Minori e famiglie</h2>
-          <p>
-            PrismaFlow è un gioco rompicapo. Le famiglie dovrebbero
-            supervisionare opportunamente l’uso di Game Center, acquisti e
-            funzioni pubblicitarie da parte dei minori. Non chiediamo
-            consapevolmente recapiti di minori mediante una registrazione
-            interna al gioco. Prima di attivare la pubblicità sarà necessario
-            verificare gli obblighi relativi all’età e le impostazioni per le
-            app rivolte ai minori in base alla classificazione e al pubblico
-            effettivi.
-          </p>
+          <p>PrismaFlow è un gioco rompicapo. Non chiediamo consapevolmente recapiti di minori tramite registrazione nel gioco. I minori dovrebbero usare l’app con la supervisione di un adulto quando appropriato. I genitori possono gestire acquisti, Game Center e privacy tramite le impostazioni Apple e contattarci per i dati dei figli. Si applicano le regole sulla privacy dei minori e le limitazioni pubblicitarie pertinenti; la classificazione per età non costituisce da sola un’autorizzazione alla pubblicità personalizzata.</p>
         </section>
         <section id="s10" class="content-section">
           <h2>Questo sito e modifiche</h2>
           <p>
             Queste pagine legali non includono strumenti di analisi né cookie di
-            tracciamento inseriti dall’editore. GitLab Pages, in qualità di
+            tracciamento inseriti dall’editore. GitHub Pages, in qualità di
             fornitore dell’hosting, potrebbe trattare log tecnici di connessione
             secondo le proprie condizioni. Possiamo aggiornare questa
             informativa quando cambiano funzionalità, partner o requisiti

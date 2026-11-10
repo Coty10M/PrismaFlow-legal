@@ -42,7 +42,7 @@
           How your game information is stored and how optional services handle
           data.
         </p>
-        <span class="meta">Last updated: 7 November 2026</span>
+        <span class="meta">Last updated: 10 November 2026</span>
       </section>
       <article class="article">
         <div class="article-intro">
@@ -76,9 +76,12 @@
               >We do not operate a PrismaFlow account system or an independent
               online server that receives this local game profile.</strong
             >
-            Device and Apple backup behavior is controlled by your device
-            settings.
+            Apple device backups depend on your settings.
           </p>
+        </section>
+        <section id="icloud" class="content-section">
+          <h2>iCloud backups</h2>
+          <p>If iCloud Drive is available, PrismaFlow automatically creates private backup files in your Apple iCloud account. These may include campaign progress, level records, nickname, avatar, challenge results, booster balances, settings, purchase-delivery identifiers and a device-specific backup identifier. Advertising consent, ad identifiers and Game Center account identifiers are excluded. Backups do not synchronise active games across devices; restoring a backup requires your confirmation. You can manage or delete iCloud data through Apple settings. Backup availability depends on iCloud and device settings.</p>
         </section>
         <section id="s3" class="content-section">
           <h2>Apple Game Center</h2>
@@ -88,7 +91,7 @@
             information, and daily/weekly challenge results to configured Apple
             leaderboards, and displays public player names, rankings and (where
             provided by Apple) player images. Your local nickname and selected
-            game avatar are stored on the device; Game Center uses the Apple
+            game avatar are stored on the device and may be included in iCloud backups; Game Center uses the Apple
             player identity shown by Game Center. Game Center is optional.
           </p>
           <p>
@@ -119,59 +122,17 @@
           </p>
         </section>
         <section id="s5" class="content-section">
-          <h2>Advertising and tracking</h2>
-          <p>
-            The app contains an integration for
-            <strong>Unity LevelPlay</strong> to support interstitial
-            advertisements and optional rewarded videos.
-            <strong
-              >At the date of this notice, production advertising is disabled in
-              the release configuration and the in-app advertising preference
-              screen is still a development/test implementation.</strong
-            >
-            The production ad configuration and consent management must be
-            completed before ads are enabled.
-          </p>
-          <p>
-            If advertising is activated in a later version, Unity LevelPlay and
-            the advertising networks configured in the mediation platform may
-            process technical device information, IP-derived approximate
-            location, ad identifiers where permitted, and ad delivery,
-            fraud-prevention and measurement information, subject to their
-            settings and applicable permissions. The actual partner list and
-            data disclosures must be checked and this notice updated before
-            activation. Apple’s App Tracking Transparency permission is separate
-            from any other consent required for advertising technologies.
-          </p>
-          <p>
-            Relevant information:
-            <a
-              href="https://unity.com/legal/privacy-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Unity Privacy Policy</a
-            >
-            and
-            <a
-              href="https://www.apple.com/legal/privacy/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Apple Privacy Policy</a
-            >.
-          </p>
+          <h2>Advertising, consent and tracking</h2>
+          <p>PrismaFlow uses <strong>Google User Messaging Platform (UMP)</strong> to display privacy choices and store or communicate consent and opt-out signals to advertising services. It uses <strong>Google AdMob</strong> (Google Mobile Ads SDK), <strong>Unity LevelPlay</strong>, <strong>Unity Ads</strong> and <strong>ironSource Ads</strong> to deliver interstitial and optional rewarded advertisements. The consent message identifies advertising partners; other authorised ad buyers and service providers may participate in ad delivery.</p>
+          <p>Advertising providers may process IP addresses and approximate location derived from them, device and app information (such as OS, model, app version and identifiers including IDFA where permitted), consent signals, ad requests, impressions, interactions, diagnostic and fraud-prevention data, and attribution or measurement information. Purposes include ad delivery, security, fraud prevention, measurement and, when permitted, personalization. Providers’ data practices and retention are described in their own notices.</p>
+          <p>Where European consent rules apply, the app uses the choices you make in UMP to select its advertising path. If consent is declined, it may request Google Limited Ads rather than initialize LevelPlay without the required device-access consent. Limited Ads do not use personal data for ad personalization; IP addresses and technical delivery data may still be processed. When programmatic limited ads are enabled, Google may use local storage or cookies solely for invalid-traffic and fraud prevention, even without advertising consent. Ads may be unavailable. See <a href="https://support.google.com/admob/answer/10105530">Google’s Limited Ads information</a>.</p>
+          <p>Apple App Tracking Transparency (ATT) is separate from advertising consent. If you deny ATT, the app must not track you across other companies’ apps or websites for advertising or measurement using Apple’s tracking permission; this does not necessarily prevent advertising. Privacy choices are available in Settings → Advertising privacy when required for your region. In applicable US states, the privacy message allows opt-outs of sale, sharing or targeted advertising as applicable. Remove Ads removes forced interstitials, not optional rewarded ads.</p>
+          <p>Learn more: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from partner apps</a>, <a href="https://unity.com/legal/privacy-policy">Unity Privacy Policy</a> (including Unity advertising and ironSource services), and <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
         </section>
         <section id="s6" class="content-section">
           <h2>Why and on what basis information is handled</h2>
-          <p>
-            Local gameplay records are processed to provide the game and
-            remember your choices (performance of the requested service and,
-            where applicable, legitimate interest in maintaining app
-            functionality). Purchases are handled to fulfil the transaction and
-            comply with applicable obligations. Optional Game Center features
-            are provided when you use them. If advertising services are enabled,
-            any required consent or other lawful basis must be established for
-            the specific technologies and purposes before use.
-          </p>
+          <p>We process gameplay and backup records to provide the requested game and recovery features; purchase records to fulfil transactions and legal obligations; and support messages to respond to requests. We rely on performance of the requested service, legal obligations, or legitimate interests in operating, securing and supporting the game, as applicable. Advertising uses consent where required, including for personalization and non-essential storage or access to the device. Other processing, such as technical ad delivery or fraud prevention, may rely on legitimate interests where permitted; this does not override any separate consent requirement for device access. You can withdraw consent or object to legitimate-interest processing where applicable.</p>
+          <p>Apple and advertising providers receive data as needed for their services and may process it under their own privacy policies. Data may be processed outside your country, including in the US; applicable data protection safeguards and transfer mechanisms depend on the provider and processing. We do not sell your local game save or run a proprietary player-account database.</p>
         </section>
         <section id="s7" class="content-section">
           <h2>Storage, retention and security</h2>
@@ -188,46 +149,18 @@
         </section>
         <section id="s8" class="content-section">
           <h2>Your choices and rights</h2>
-          <p>
-            You can choose not to use Game Center, manage Apple tracking
-            permission in iOS Settings, and contact us about privacy matters at
-            <a href="mailto:coticapp@gmail.com">coticapp@gmail.com</a>. In the
-            current testing build you can change the advertising preference from
-            the app settings; it is not a substitute for a completed production
-            consent management solution. To stop the app’s local processing, you
-            can remove the app and its local data, subject to your backup
-            settings.
-          </p>
-          <p>
-            Where applicable, you may request access, correction, deletion,
-            restriction, portability, or object to certain processing; you may
-            withdraw consent when processing relies on it. You may also complain
-            to your data-protection authority (in Italy,
-            <a
-              href="https://www.garanteprivacy.it/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Garante per la protezione dei dati personali</a
-            >). Requests concerning data controlled directly by Apple or other
-            providers may also need to be directed to those providers.
-          </p>
+          <p>Manage consent or opt-out choices in Settings → Advertising privacy when the form is available for your region; withdraw consent without affecting prior lawful processing. Manage ATT in iOS Settings, Game Center in Apple settings, and local and iCloud backup data through device and Apple account settings. Uninstalling the app removes local data but does not necessarily delete iCloud backups or provider records. For access, correction, deletion, restriction, portability, objections or applicable US privacy rights, contact <a href="mailto:coticapp@gmail.com">coticapp@gmail.com</a>. We may need to verify your request.</p>
+          <p>You can complain to your local supervisory authority, including the <a href="https://www.garanteprivacy.it/">Italian data protection authority</a>. Apple and advertising providers may need to handle requests relating to data they independently control.</p>
         </section>
         <section id="s9" class="content-section">
           <h2>Children and families</h2>
-          <p>
-            PrismaFlow is a puzzle game. Families should supervise children’s
-            use of Game Center, purchases and advertising functions as
-            appropriate. We do not knowingly request children’s contact details
-            through an in-game registration form. Before advertising is enabled,
-            age-related obligations and the ad networks’ child-directed settings
-            must be reviewed for the app’s final age rating and audience.
-          </p>
+          <p>PrismaFlow is a puzzle game. We do not knowingly request children’s contact details through an in-game registration form. Children should use the app with parental supervision where appropriate. Parents or guardians can manage Apple purchase, Game Center and device privacy controls and contact us about a child’s data. Applicable age-related privacy rules and advertising restrictions must be respected; the app’s age rating does not by itself establish eligibility for personalized ads.</p>
         </section>
         <section id="s10" class="content-section">
           <h2>This website and changes</h2>
           <p>
             These public legal pages contain no analytics code or
-            author-installed tracking cookies. GitLab Pages, as hosting
+            author-installed tracking cookies. GitHub Pages, as hosting
             provider, may process technical connection logs under its own
             privacy terms. We may update this notice when app features, partners
             or legal requirements change; the date at the top reflects the
